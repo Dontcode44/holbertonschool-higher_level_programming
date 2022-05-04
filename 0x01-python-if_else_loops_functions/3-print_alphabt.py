@@ -2,5 +2,5 @@
 import string
 
 for i in string.ascii_lowercase:
-    if i != 'q' and i != 'n':
-        print(i, end="")
+    if i != "q" and i != "n":
+        print(f"{i}", end="")
