@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import string
 
-for i in string.ascii_lowercase:
-    if i != 4 and i != 16:
+for i in range(97, 123):
+    if i == 101 or i != 113:
         print(f"{i}", end="")
