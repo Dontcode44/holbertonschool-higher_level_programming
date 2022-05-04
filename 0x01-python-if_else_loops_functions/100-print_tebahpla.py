@@ -5,4 +5,4 @@ for i in range(122, 96, -1):
         tmp = chr(i)
     else:
         tmp = chr(i - 32)
-        print(f"{tmp}", end="")
+    print(f"{tmp}", end="")
