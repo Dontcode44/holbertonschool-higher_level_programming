@@ -2,4 +2,4 @@
 def square_matrix_simple(matrix=[]):
 
     if matrix:
-        return [list(map((lambda x: x**2), position)) for position in matrix]
+        return [list(map((lambda x: x * x), position)) for position in matrix]
