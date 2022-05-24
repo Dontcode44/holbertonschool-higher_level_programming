@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
 '''This is my Square Class'''
+
+
 class Square:
     '''Definitions'''
     def __init__(self, size=0):
