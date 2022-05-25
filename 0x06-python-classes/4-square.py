@@ -3,7 +3,6 @@
 '''Init of the program'''
 
 
-
 class Square:
     '''Definitios'''
     def __init__(self, size=0):
@@ -20,12 +19,12 @@ class Square:
     def area(self):
         '''Returns'''
         return self.__size * self.__size
-
+        '''Getter'''
     @property
     def size(self):
         '''Return self'''
         return self.__size
-
+        '''Setter'''
     @size.setter
     def size(self, value):
         '''Validations to value'''
