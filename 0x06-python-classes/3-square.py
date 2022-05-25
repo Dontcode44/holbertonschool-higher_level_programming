@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 '''Init of the program'''
 
 
@@ -14,6 +15,7 @@ class Square:
             raise ValueError('size must be >= 0')
         else:
             self.__size = size
+
     def area(self):
         '''Returns'''
         return self.__size * self.__size
