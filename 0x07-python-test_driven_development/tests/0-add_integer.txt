@@ -58,7 +58,7 @@ Cases:
     -20
 
 12. Double String:
-    >>> add_integer("Holberton","Hector")
+    >>> add_integer("Holberton", "Hector")
     Traceback (most recent call last):
     ...
     TypeError: a must be an integer
