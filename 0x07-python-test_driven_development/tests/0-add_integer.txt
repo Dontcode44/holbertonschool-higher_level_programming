@@ -31,6 +31,24 @@ Cases:
     ...
     ValueError: cannot convert float NaN to integer
 
+7. String a:
+    >>> add_integer("Hector", 4)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+8. String b:
+    >>> add_integer(4, "Hector")
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+9. None:
+    >>> add_integer(None)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
 10. Negative floats:
     >>> add_integer(10.5, 10.4)
     20
@@ -38,6 +56,12 @@ Cases:
 11. Floats nevatives
     >>> add_integer(-10.5, -10.4)
     -20
+
+12. Double String:
+    >>> add_integer("Holberton", "Hector")
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
 
 13. One arg:
     >>> add_integer(1)
