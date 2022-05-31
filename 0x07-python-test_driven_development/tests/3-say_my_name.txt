@@ -1,0 +1,62 @@
+Test function: def say_my_name(first_name, last_name=""):
+
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+======================
+Cases:
+
+1. Normal
+    >>> say_my_name("John", "Smith")
+    My name is John Smith
+
+2. Only first name
+    >>> say_my_name("Bob")
+    My name is Bob
+
+3. No input:
+    >>> say_my_name()
+    Traceback (most recent call last):
+    ...
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+4. Input String and int:
+    >>> say_my_name("John", 4)
+    Traceback (most recent call last):
+    ...
+    TypeError: last_name must be a string
+
+5. Input int and String:
+    >>> say_my_name(4, "Smith")
+    Traceback (most recent call last):
+    ...
+    TypeError: first_name must be a string
+
+6. Input integers:
+    >>> say_my_name(4, 4)
+    Traceback (most recent call last)
+    ...
+    TypeError: first_name must be a string
+
+7. Input only integer:
+    >>> say_my_name(4)
+    Traceback (most recent call last):
+    ...
+    TypeError: first_name must be a string
+
+8. More than two args:
+    >>> say_my_name("John", "Walter", "White")
+    Traceback (most recent call last)
+    ...
+    TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
+
+9. Input float and string:
+    >>> say_my_name(4.5, "White")
+    Traceback (most recent call last)
+    ...
+    TypeError: first_name must be a string
+
+10. Input string and float:
+    >>> say_my_name("Walter", 4.5)
+    Traceback (most recent call last)
+    ...
+    TypeError: last_name must be a string
