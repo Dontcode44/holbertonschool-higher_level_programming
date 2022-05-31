@@ -47,7 +47,7 @@ Cases:
     >>> add_integer(None)
     Traceback (most recent call last):
     ...
-    TypeError: b must be an integer
+    TypeError: a must be an integer
 
 10. Negative floats:
     >>> add_integer(10.5, 10.4)
