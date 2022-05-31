@@ -1,0 +1,68 @@
+Test function: def add_integer(a, b=98):
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+======================
+Cases:
+
+1. Sum two integer numbers:
+    >>> add_integer(1, 2)
+    3
+
+2. With a negative:
+    >>> add_integer(100, -2)
+    98
+
+3. With float and int:
+    >>> add_integer(4.4, 2)
+    6
+
+4. With int and float:
+    >>> add_integer(5, 5.8)
+    10
+
+5. Between floats:
+    >>> add_integer(2.5, 8.2)
+    10
+
+6. Float NaN:
+    >>> add_integer(float('NaN'))
+    Traceback (most recent call last):
+    ...
+    ValueError: cannot convert float NaN to integer
+
+7. String a:
+    >>> add_integer("Hector", 4)
+    Traceback (most recent call last)
+    ...
+    TypeError: a must be an integer
+
+8. String b:
+    >>> add_integer(4, "Hector")
+    Traceback (most recent call last)
+    ...
+    TypeError: b must be an integer
+
+9. None:
+    >>> add_integer(None)
+    Traceback (most recent call last)
+    ...
+    TypeError: b must be an integer
+
+10. Negative floats:
+    >>> add_integer(10.5, 10.4)
+    20
+
+11. Floats nevatives
+    >>> add_integer(-10.5, -10.4)
+    -20
+
+12. Double String:
+    >>> add_integer("Holberton","Hector")
+    Traceback (most recent call last)
+    ...
+    TypeError: a must be an integer
+
+13. One arg:
+    >>> add_integer(1)
+    99
