@@ -33,7 +33,7 @@ Cases:
 
 6. Input integers:
     >>> say_my_name(4, 4)
-    Traceback (most recent call last)
+    Traceback (most recent call last):
     ...
     TypeError: first_name must be a string
 
@@ -45,18 +45,18 @@ Cases:
 
 8. More than two args:
     >>> say_my_name("John", "Walter", "White")
-    Traceback (most recent call last)
+    Traceback (most recent call last):
     ...
     TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
 
 9. Input float and string:
     >>> say_my_name(4.5, "White")
-    Traceback (most recent call last)
+    Traceback (most recent call last):
     ...
     TypeError: first_name must be a string
 
 10. Input string and float:
     >>> say_my_name("Walter", 4.5)
-    Traceback (most recent call last)
+    Traceback (most recent call last):
     ...
     TypeError: last_name must be a string
