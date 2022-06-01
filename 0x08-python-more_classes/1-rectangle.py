@@ -8,12 +8,12 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
-    
+
     @property
     def width(self):
         '''Getter of width'''
         return self.__width
-    
+
     @property
     def height(self):
         '''Getter of height'''
