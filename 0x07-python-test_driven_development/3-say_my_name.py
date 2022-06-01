@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 """
 Function that prints the name
-The validations to do is the 
-variable don't be a != string 
+The validations to do is the
+variable don't be a != string
 """
-
 
 
 def say_my_name(first_name, last_name=""):
