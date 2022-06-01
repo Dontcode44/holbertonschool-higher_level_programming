@@ -3,7 +3,6 @@
 '''This is my Rectangle class'''
 
 
-
 class Rectangle:
     '''Definitions'''
     number_of_instances = 0
