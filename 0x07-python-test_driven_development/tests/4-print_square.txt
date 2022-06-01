@@ -2,8 +2,11 @@ Test function: def print_square(size):
 
     >>> print_square = __import__('4-print_square').print_square
 
-1. Square
+Cases:
+
+1. Normal Square
     >>> print_square(4)
+    ####
     ####
     ####
     ####
