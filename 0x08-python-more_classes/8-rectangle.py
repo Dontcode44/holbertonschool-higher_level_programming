@@ -3,8 +3,6 @@
 '''This is my Rectangle class'''
 
 
-from cmath import rect
-
 
 class Rectangle:
     '''Definitions'''
