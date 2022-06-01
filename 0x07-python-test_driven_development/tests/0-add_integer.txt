@@ -71,4 +71,13 @@ Cases:
     >>> add_integer(1500.5)
     1598
 
-15. 
+15. Floats
+    >>> add_integer(float('inf'))
+    Traceback (most recent call last):
+    ...
+    OverflowError: cannot convert float infinity to integer
+
+    >>> add_integer(float('-inf'))
+    Traceback (most recent call last):
+    ...
+    OverflowError: cannot convert float infinity to integer
