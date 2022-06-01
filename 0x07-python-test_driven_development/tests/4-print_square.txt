@@ -1,0 +1,61 @@
+Test function: def print_square(size):
+
+    >>> print_square = __import__('4-print_square').print_square
+
+1. Square
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+2. With -
+    >>> print_square(-1)
+    Traceback (most recent call last):
+    ...
+    ValueError: size must be >= 0
+
+3. Void
+    Traceback (most recent call last):
+    ...
+    TypeError: print_square() missing 1 required positional argument: 'size'
+
+3. Two integers
+    >>> print_square(2,4)
+    Traceback (most recent call last):
+    ...
+    TypeError: print_square() takes 1 positional argument but 2 were given
+
+4. With string
+    >>> print_square("Bob")
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+5. Number and str
+    >>> print_square(4j)
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+6. None
+    >>> print_square(None)
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+7. Positional
+    >>> print_square([])
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+8. With one []
+    >>> print_square([1])
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+9. Zero
+    >>> print_square(0)
+    
