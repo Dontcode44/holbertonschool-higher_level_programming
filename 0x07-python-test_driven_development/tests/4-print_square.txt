@@ -7,12 +7,8 @@ Cases:
 1. Normal Square
     >>> print_square(4)
     ####
-    ####
-    ####
-    ####
-    ####
 
-2. With -
+2. With negative
     >>> print_square(-1)
     Traceback (most recent call last):
     ...
@@ -62,10 +58,16 @@ Cases:
 
 9. Zero
     >>> print_square(0)
-    
+
 
 10. Float
     >>> print_square(44.55)
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+11. Negative float
+    >>> print_square(-4.4)
     Traceback (most recent call last):
     ...
     TypeError: size must be an integer
