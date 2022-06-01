@@ -5,7 +5,6 @@ With a character '#'
 """
 
 
-
 def print_square(size):
     """Validations"""
     if type(size) is not int:
