@@ -10,8 +10,8 @@ Cases:
     My name is John Smith
 
 2. Only first name
-    >>> say_my_name("Bob")
-    My name is Bob
+    >>> say_my_name("Alex")
+    My name is Alex
 
 3. No input:
     >>> say_my_name()
