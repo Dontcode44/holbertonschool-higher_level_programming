@@ -16,6 +16,7 @@ Test function: def print_square(size):
     ValueError: size must be >= 0
 
 3. Void
+    >>> print_square()
     Traceback (most recent call last):
     ...
     TypeError: print_square() missing 1 required positional argument: 'size'
@@ -59,3 +60,9 @@ Test function: def print_square(size):
 9. Zero
     >>> print_square(0)
     
+
+10. Float
+    >>> print_square(44.55)
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
