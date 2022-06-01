@@ -7,6 +7,9 @@ Cases:
 1. Normal Square
     >>> print_square(4)
     ####
+    ####
+    ####
+    ####
 
 2. With negative
     >>> print_square(-1)
@@ -21,7 +24,7 @@ Cases:
     TypeError: print_square() missing 1 required positional argument: 'size'
 
 3. Two integers
-    >>> print_square(2,4)
+    >>> print_square(2, 4)
     Traceback (most recent call last):
     ...
     TypeError: print_square() takes 1 positional argument but 2 were given
@@ -59,7 +62,6 @@ Cases:
 9. Zero
     >>> print_square(0)
 
-
 10. Float
     >>> print_square(44.55)
     Traceback (most recent call last):
@@ -71,3 +73,20 @@ Cases:
     Traceback (most recent call last):
     ...
     TypeError: size must be an integer
+
+12. Normal ten
+    >>> print_square(10)
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+
+13. Normal one
+    >>> print_square(1)
+    #
