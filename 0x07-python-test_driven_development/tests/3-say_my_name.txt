@@ -11,7 +11,7 @@ Cases:
 
 2. Only first name
     >>> say_my_name("Alex")
-    My name is Alex
+    My name is Alex 
 
 3. No input:
     >>> say_my_name()
