@@ -6,7 +6,7 @@ Write a class LockedClass with no class or object attribute
 '''
 
 
-class LokedClass:
+class LockedClass:
     '''
     A locked class to the user. We need to use a dynamic
     memory on a specific instance attribute called lie "first_name"
