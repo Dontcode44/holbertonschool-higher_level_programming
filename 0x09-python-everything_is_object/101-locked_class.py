@@ -12,3 +12,7 @@ class LokedClass:
     memory on a specific instance attribute called lie "first_name"
     '''
     __slots__ = ['first_name']
+
+    def __init__(self):
+        '''Instance from init constructor'''
+        pass
