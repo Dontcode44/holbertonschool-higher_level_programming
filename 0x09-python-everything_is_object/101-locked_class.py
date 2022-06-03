@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-'''My class locked'''
+
+'''
+My class locked
+Write a class LockedClass with no class or object attribute
+'''
 
 
 class LokedClass:
