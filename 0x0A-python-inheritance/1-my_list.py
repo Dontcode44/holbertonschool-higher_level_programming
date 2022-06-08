@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
-'''Index'''
+'''
+Class that inherits a list
+'''
 
 
 class MyList(list):
