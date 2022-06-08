@@ -2,9 +2,9 @@
 '''Initializaction of the class'''
 
 
-def add_attribute(obj, attribute, value):
+def add_attribute(MyClass, attribute, value):
     '''Using the hasatrr'''
-    if hasattr(obj, "__dict__"):
-        setattr(obj, attribute, value)
+    if hasattr(MyClass, "__dict__"):
+        setattr(MyClass, attribute, value)
     else:
         raise TypeError("can't add new atribute")
