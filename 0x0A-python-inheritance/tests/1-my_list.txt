@@ -19,17 +19,17 @@ Cases:
 2. With negatives
     my_list = MyList()
 
-    >>> my_list.append(-1)
-    >>> my_list.append(338)
+    >>> my_list.append(-2)
+    >>> my_list.append(38)
     >>> my_list.append(-19)
     >>> my_list.append(1000)
     >>> my_list.append(-98)
 
     >>> print(my_list)
-[-1, 338, -19, 1000, -98]
+    [-2, 38, -19, 1000, -98]
 
     >>> my_list.print_sorted()
-[-98, -19, -1, 338, 1000]
+    [-98, -19, -1, 338, 1000]
 
 3. Infinity
     >>> my_list = MyList()
