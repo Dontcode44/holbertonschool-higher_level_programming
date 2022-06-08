@@ -6,6 +6,7 @@ class BaseGeometry:
     '''Creation of class'''
 
     def area(self):
+        '''The new method'''
         raise Exception("area() is not implemented")
 
     def integer_validation(self, name, value):
