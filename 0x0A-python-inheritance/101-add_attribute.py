@@ -4,7 +4,7 @@
 
 def add_attribute(MyClass, attribute, value):
     '''Using the hasatrr'''
-    if hasattr(MyClass, "__dict__"):
+    if hasattr(MyClass, "__dict__") is False:
         '''Setters the data'''
         setattr(MyClass, attribute, value)
     else:
