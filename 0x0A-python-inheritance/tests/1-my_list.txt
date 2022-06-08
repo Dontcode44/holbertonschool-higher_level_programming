@@ -29,7 +29,7 @@ Cases:
     [-2, 38, -19, 1000, -98]
 
     >>> my_list.print_sorted()
-    [-98, -19, -1, 338, 1000]
+    [-98, -19, -2, 338, 1000]
 
 3. Infinity
     >>> my_list = MyList()
