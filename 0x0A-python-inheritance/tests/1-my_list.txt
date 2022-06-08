@@ -8,58 +8,134 @@ Using ``Print a sorted list``
 
 Validate cases:
 
-Good list (sorted list - main)
-my_list = MyList()
-      >>> my_list.append(1)
-      >>> my_list.append(4)
-      >>> my_list.append(2)
-      >>> my_list.append(3)
-      >>> my_list.append(5)
-      >>> my_list.print_sorted()
-      [1, 2, 3, 4, 5]
-      >>> print(my_list)
-      [1, 4, 2, 3, 5]
+=========
+1. Normal
+=========
 
-Good list (empty list)
-      >>> my_list = MyList()
-      >>> my_list.print_sorted()
-      []
+>>> my_list = MyList()
 
-Passing arguments to the print funtion
-      >>> my_list = MyList()
-      >>> my_list.print_sorted([1, 2, 3])
-      Traceback (most recent call last):
-        ...
-      TypeError: print_sorted() takes 1 positional argument but 2 were given
+>>> my_list.append(90)
+>>> my_list.append(222)
+>>> my_list.append(0)
+>>> my_list.append(33)
+>>> my_list.append(15)
 
-check the str method
-      >>> my_list = MyList()
-      >>> my_list.append(1)
-      >>> print(my_list)
-      [1]
+>>> print(my_list)
+[90, 222, 0, 33, 15]
 
-Good list with just one number
-      >>> my_list = MyList()
-      >>> my_list.append(1)
-      >>> my_list.print_sorted()
-      [1]
+>>> my_list.print_sorted()
+[0, 15, 33, 90, 222]
 
-Good list with negative numbers
-      >>> my_list = MyList()
-      >>> my_list.append(-1)
-      >>> my_list.append(1)
-      >>> my_list.append(2)
-      >>> my_list.append(-2)
-      >>> my_list.append(3)
-      >>> my_list.append(-3)
-      >>> my_list.print_sorted()
-      [-3, -2, -1, 1, 2, 3]
+============
+2. Negatives
+============
 
-Good list with repeated numbers
-      >>> my_list = MyList()
-      >>> my_list.append(1)
-      >>> my_list.append(2)
-      >>> my_list.append(2)
-      >>> my_list.append(3)
-      >>> my_list.print_sorted()
-      [1, 2, 2, 3]
+>>> my_list = MyList()
+
+>>> my_list.append(-1)
+>>> my_list.append(338)
+>>> my_list.append(-19)
+>>> my_list.append(1000)
+>>> my_list.append(-98)
+
+>>> print(my_list)
+[-1, 338, -19, 1000, -98]
+
+>>> my_list.print_sorted()
+[-98, -19, -1, 338, 1000]
+
+
+=========
+3. Emptys
+=========
+
+>>> my_list = MyList()
+
+>>> my_list.append("")
+>>> my_list.append("")
+>>> my_list.append("")
+
+>>> print(my_list)
+['', '', '']
+
+>>> my_list.print_sorted()
+['', '', '']
+
+---------
+
+>>> my_list = MyList()
+
+>>> print(my_list)
+[]
+
+>>> my_list.print_sorted()
+[]
+
+---------
+
+>>> my_list = MyList()
+
+>>> my_list.append(None)
+>>> my_list.append(None)
+>>> my_list.append(None)
+
+>>> print(my_list)
+[None, None, None]
+
+===========
+4. Infinity
+===========
+
+>>> my_list = MyList()
+
+my_list.append(float('inf'))
+my_list.append(float('-inf'))
+
+>>> print(my_list)
+[]
+
+>>> my_list.print_sorted()
+[]
+
+=============
+5. Infinity 2
+=============
+
+>>> my_list = MyList()
+
+my_list.append(99)
+my_list.append(float('inf'))
+my_list.append(-1)
+my_list.append(2222)
+my_list.append(float('-inf'))
+
+>>> print(my_list)
+[]
+
+>>> my_list.print_sorted()
+[]
+
+=========
+6. String
+=========
+
+>>> my_list = MyList()
+
+>>> my_list.append(222)
+>>> my_list.append("Pacho")
+>>> my_list.print_sorted()
+Traceback (most recent call last):
+...
+TypeError: '<' not supported between instances of 'str' and 'int'
+
+================
+7. Without print
+================
+
+>>> my_list = MyList()
+
+>>> my_list.append(100000)
+>>> my_list.append(-99)
+>>> my_list.append(802)
+>>> my_list.append(3)
+>>> my_list.append(55)
