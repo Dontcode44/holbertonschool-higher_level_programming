@@ -7,20 +7,11 @@ def pascal_triangle(n):
 
     new_list = []
 
-    if n <= 0:
-        return new_list
-
-    if n == 1:
-        lista1 = [[1]]
-        return lista1
-
-    new_list = [[1], [1, 1]]
-    '''Creating a for'''
-    for i in range(1, n - 1):
-        linea = [1]
-        for j in range(0, len(new_list[i]) - 1):
-            linea.extend([new_list[i][j] + new_list[i][j+1]])
-        linea += [1]
-        new_list.append(linea)
-
+    for i in range(n):
+        new_list.append([[]])
+        new_list[i].append(1)
+        for j in range(1, i):
+            new_list[i].append(new_list[i - 1][j - 1] + new_list[i - 1][j])
+        if i != 0:
+            new_list[i].append(1)
     return new_list
