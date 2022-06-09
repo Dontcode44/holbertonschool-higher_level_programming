@@ -9,11 +9,13 @@ def pascal_triangle(n):
 
     if n <= 0:
         return new_list
+
     if n == 1:
         lista1 = [[1]]
         return lista1
-    new_list = [[1], [1, 1]]
 
+    new_list = [[1], [1, 1]]
+    '''Creating a for'''
     for i in range(1, n - 1):
         linea = [1]
         for j in range(0, len(new_list[i]) - 1):
