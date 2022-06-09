@@ -8,7 +8,7 @@ def pascal_triangle(n):
     new_list = []
 
     for i in range(n):
-        new_list.append([[]])
+        new_list.append([])
         new_list[i].append(1)
         for j in range(1, i):
             new_list[i].append(new_list[i - 1][j - 1] + new_list[i - 1][j])
