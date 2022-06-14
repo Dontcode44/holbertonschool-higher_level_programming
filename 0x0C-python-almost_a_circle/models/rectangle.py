@@ -75,12 +75,14 @@ class Rectangle(Base):
         return self.__height * self.__width
 
     def display(self):
+        '''Print the #'''
         print(("\n" * self.__y) +
               "\n".join(((" " * self.__x) + ("#" * self.__width))
                         for i in range(self.__height)))
 
     def __str__(self):
         '''Overriding the __str__'''
+
         return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(self.id,
                                                                  self.__x,
                                                                  self.__y,
