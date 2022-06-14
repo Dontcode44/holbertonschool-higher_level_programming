@@ -75,10 +75,10 @@ class Rectangle(Base):
         return self.__height * self.__width
 
     def display(self):
-        '''Return a figure rectangle with "#"'''
-        if self.__y != 0:
-            for a in range(self.__y):
-                print()
+        return
 
-        for row in range(self.__height):
-            print((self.__x * " ") + (self.__y * '#'))
+    def __str__(self):
+        '''Overriding the __str__'''
+        return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
+                                                self.id, self.__x, self.__y,
+                                                self.__width, self.__height)
