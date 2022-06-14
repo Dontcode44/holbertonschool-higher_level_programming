@@ -3,6 +3,7 @@
 import json
 
 
+
 class Base:
     '''This is the initial class of classes'''
     __nb_objects = 0
@@ -29,3 +30,12 @@ class Base:
         if json_string is None:
             return list
         return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        if cls.__name__ == "Rectangle":
+            dummy = cls(1, 1)
+        if cls.__name__ == "Square":
+            dummy = cls(1)
+        dummy.update(**dictionary)
+        return dummy
