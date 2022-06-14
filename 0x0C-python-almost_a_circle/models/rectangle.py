@@ -13,7 +13,7 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
-        
+
     @property
     def width(self):
         '''Getter from width'''
