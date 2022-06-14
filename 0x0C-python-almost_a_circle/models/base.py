@@ -16,7 +16,7 @@ class Base:
             self.id = Base.__nb_objects
 
     @staticmethod
-    def to_json_sting(list_dictionaries):
+    def to_json_string(list_dictionaries):
         '''Standard format for data'''
         if list_dictionaries is None:
             list_dictionaries = []
