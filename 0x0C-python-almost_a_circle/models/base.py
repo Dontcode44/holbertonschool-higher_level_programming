@@ -18,6 +18,6 @@ class Base:
     @staticmethod
     def to_json_sting(list_dictionaries):
         '''Standard format for data'''
-        if list_dictionaries is [None, ""]:
-            return "[]"
+        if list_dictionaries is None:
+            list_dictionaries = []
         return json.dumps(list_dictionaries)
