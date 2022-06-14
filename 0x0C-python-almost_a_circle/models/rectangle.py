@@ -79,5 +79,6 @@ class Rectangle(Base):
         if self.__y != 0:
             for a in range(self.__y):
                 print()
+
         for row in range(self.__height):
             print((self.__x * " ") + (self.__y * '#'))
