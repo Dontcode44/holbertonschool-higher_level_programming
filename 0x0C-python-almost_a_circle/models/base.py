@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 '''Initialization class Base'''
-
-
 import json
 
 
@@ -16,7 +14,7 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
-        
+
     @staticmethod
     def to_json_sting(list_dictionaries):
         '''Standard format for data'''
