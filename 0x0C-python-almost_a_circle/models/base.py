@@ -2,6 +2,9 @@
 '''Initialization class Base'''
 
 
+import json
+
+
 class Base:
     '''This is the initial class of classes'''
     __nb_objects = 0
@@ -13,3 +16,10 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+        
+    @staticmethod
+    def to_json_sting(list_dictionaries):
+        '''Standard format for data'''
+        if list_dictionaries is [None, ""]:
+            return "[]"
+        return json.dumps(list_dictionaries)
