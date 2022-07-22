@@ -17,3 +17,11 @@
         </li>
     </ul>
 </div>
+    <p>The Domain Name System (DNS) is the telephone directory of the Internet. People access information online through domain names like nytimes.com or espn.com. Web browsers interact using Internet Protocol (IP) addresses.</p>
+    <p>DNS translates domain names to IP addresses so that browsers can load Internet resources.</p>
+    <p><br></p>
+    <p>Every device connected to the Internet has a unique IP address that other computers can use to find it. DNS servers remove the need for humans to memorize IP addresses such as 192.168.1.</p>
+    <p>1 (in IPv4) or newer, more complex alphanumeric IP addresses, such as 2400:cb00:2048:1::c629:d7a2 (in IPv6).</p>
+    <p>Some drawings that we make:</p>
+    <p><br></p>
+</div>
