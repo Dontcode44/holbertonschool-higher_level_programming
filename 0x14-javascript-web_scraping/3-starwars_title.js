@@ -2,11 +2,10 @@
 
 const axios = require('axios').default;
 
-axios.get('https://swapi-api.hbtn.io/api/films/:id')
+axios.get('https://swapi-api.hbtn.io/api/films/' + process.argv[2])
   .then(function (response) {
-    console.log('code: ' + response.status);
+    console.log(response.data.title);
   })
   .catch(function (error) {
-    // handle error
     console.log('code: ' + error.response.status);
   });
