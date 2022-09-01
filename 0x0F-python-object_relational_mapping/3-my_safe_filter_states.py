@@ -11,7 +11,8 @@ if __name__ == "__main__":
                            db=sys.argv[3])
     cur = conn.cursor()
     argu = sys.argv[4]
-    cur.execute("SELECT * FROM states WHERE name = %(name)s ORDER BY states.id",\
+    cur.execute("SELECT * FROM states\
+                WHERE name = %(name)s ORDER BY states.id",
                 {'name': sys.argv[4]})
     query_rows = cur.fetchall()
     for row in query_rows:
