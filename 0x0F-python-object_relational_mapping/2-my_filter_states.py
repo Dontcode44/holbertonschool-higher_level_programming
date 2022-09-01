@@ -2,7 +2,6 @@
 """
 Write a script that lists all states from the database hbtn_0e_0_usa:
 """
-from ast import arg
 import MySQLdb
 import sys
 if __name__ == "__main__":
@@ -12,7 +11,7 @@ if __name__ == "__main__":
                            db=sys.argv[3])
     cur = conn.cursor()
     argu = sys.argv[4]
-    cur.execute("SELECT * FROM states WHERE name = '{}' LIKE BINARY 'N%' ORDER BY id".format(argu))
+    cur.execute("SELECT * FROM states WHERE name LIKE BINARY '{}%' ORDER BY states.id".format(argu))
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
