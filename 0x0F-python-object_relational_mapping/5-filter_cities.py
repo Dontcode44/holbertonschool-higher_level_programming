@@ -10,11 +10,10 @@ if __name__ == "__main__":
                            user=sys.argv[1], passwd=sys.argv[2],
                            db=sys.argv[3])
     cur = conn.cursor()
-    argu = sys.argv[4]
     cur.execute("SELECT cities.id, cities.name, states.name FROM cities JOIN\
-        states ON states.name= %s and cities.state_id=states.id", (sys.argv[4],))
+        states ON states.name= %s AND\
+            cities.state_id=states.id;", (sys.argv[4],))
     query_rows = cur.fetchall()
-    for row in query_rows:
-        print(row)
+    print(", ".join([state[0] for state in query_rows]))
     cur.close()
     conn.close()
