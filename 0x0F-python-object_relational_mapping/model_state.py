@@ -11,6 +11,10 @@ Base = declarative_base()
 
 
 class State(Base):
+    """Class to create a row
+    Args:
+        Base (_type_): Table
+    """
     __tablename__ = 'states'
     id = Column(Integer, nullable=False, unique=True, primary_key=True)
     name = Column(String(128), nullable=False)
