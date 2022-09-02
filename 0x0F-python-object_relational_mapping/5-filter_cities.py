@@ -14,6 +14,6 @@ if __name__ == "__main__":
         states ON states.name= %s AND\
             cities.state_id=states.id;", (sys.argv[4],))
     query_rows = cur.fetchall()
-    print(", ".join([state[0] for state in query_rows]))
+    print(", ".join([state[1] for state in query_rows]))
     cur.close()
     conn.close()
