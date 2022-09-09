@@ -5,6 +5,6 @@ Write a Python script that takes in a URL, sends a request to the URL and displa
 import requests
 import sys
 
-    url = sys.argv[1]
-    response = requests.get(url)
-    print(response.headers.get('X-Request-Id'))
+url = sys.argv[1]
+response = requests.get(url)
+print(response.headers.get('X-Request-Id'))
